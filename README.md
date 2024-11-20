@@ -21,7 +21,13 @@ This section contains a brief explanation of the showcased technologies.
 
 ### JWT
 
-:ticket:
+JSON Web Tokens are a standardized way of storing/transmitting data, most often used in the process of authorizing a user to access certain content on a webserver after they have been authenticated.
+
+One core advantage of JWTs is that they are self-contained. They contain all the necessary data to authorize the token bearer to do what they want to do and so the server does not have to maintain session data in a database or in-memory storage.
+
+a JWT consists of a Header, Payload and Signature separated by dots. The header contains metadata about the token (type, signing algorithm), the payload contains the actual content (claims) and the signature is a way for the issuing server to check that the token has not been modified clientside.
+
+JWT can be stored clientside in a cookie, Local Storage or Session Storage. Out of these, cookie with correct flags is the safest option.
 
 ### Session ID
 
@@ -50,6 +56,9 @@ Here are listed the sources used in [The technologies](#the-technologies) part o
 
 ### JWT
 
+- [jwt.io](https://jwt.io/)
+- [rfc-editor - RFC 7519 (JWT)](https://www.rfc-editor.org/info/rfc7519)
+
 
 ### Session ID
 
@@ -61,6 +70,16 @@ Here are listed the sources used in [The technologies](#the-technologies) part o
 
 ### Various subjects
 - [ChatGpt](https://chatgpt.com/)
+- [Youtube - Web Dev Simplified - JavaScript Cookies vs Local Storage vs Session Storage](https://www.youtube.com/watch?v=GihQAC1I39Q)
+- [Youtube - Web Dev Simplified -  What Is JWT and Why Should You Use JWT ](https://www.youtube.com/watch?v=7Q17ubqLfaM)
+- [Youtube - Matt on Data Science - JWT Authentication Explained](https://www.youtube.com/watch?v=iHNkGQyJxJs)
+- [Youtube - ByteMonk -  JSON Web Tokens (JWTs) explained with examples | System Design ](https://www.youtube.com/watch?v=iB__rLXGsas)
+- [Youtube - ByteMonk -  OAuth 2.0 explained with examples ](https://www.youtube.com/watch?v=ZDuRmhLSLOY)
+- [Youtube - Nikita Dev -  How Does JWT Authentication Work? (JSON Web Token) | Tokens vs Sessions ](https://www.youtube.com/watch?v=hoBSjmrwF1k)
+- [Youtube - ByteByteGo -  Session Vs JWT: The Differences You May Not Know! ](https://www.youtube.com/watch?v=fyTxwIa-1U0)
+- [Youtube - Code Realm -  Authentication on the Web (Sessions, Cookies, JWT, localStorage, and more) ](https://www.youtube.com/watch?v=2PPSXonhIck)
+- [Youtube - Steve Griffith - Prof3ssorSt3v3  - Browser Persistent Data Storage ](https://www.youtube.com/watch?v=OOcxXyckmcs)
+
 
 ---
 
