@@ -25,7 +25,11 @@ This section contains a brief explanation of the showcased technologies.
 
 ### Session ID
 
-:id:
+Session ID is a way for a website to identify a user and maintain information about what the user is doing and possible data serverside during the session. For example providing the user seamless interaction across a multipage domain or maintaining the contents of a shopping-cart.
+
+Session ID is created by the server and sent to the user, often in a cookie.  It is most often a randomly generated alphanumeric string. The user subsequentially send the Session ID with every request related to that session (if it was stored in a cookie).
+
+Session ID can be given a finite lifespan by setting an expiration date for the cookie it was transmitted in. 
 
 ### Local Storage
 
@@ -36,7 +40,6 @@ Storage of data in Local Storage is done with key-value pairs, where the actual 
 Data in Local Storage is meant to be domain specific and thus somewhat isolated but as it is accessible via JavaScript, it is vulnerable to XSS attacks.
 
 Related to Local Storage is Session Storage which is essentially the same, but automatically clears itself when the user closes the related browser tab.
-
 
 ## Sources
 
@@ -50,12 +53,14 @@ Here are listed the sources used in [The technologies](#the-technologies) part o
 
 ### Session ID
 
+- [techtarget - session ID](https://www.techtarget.com/searchsoftwarequality/definition/session-ID)
+
 ### Local Storage
 - [w3schools HTML Web Storage API](https://www.w3schools.com/html/html5_webstorage.asp)
 - [mdn web docs - Web Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API)
 
 ### Various subjects
-- ChatGpt
+- [ChatGpt](https://chatgpt.com/)
 
 ---
 
