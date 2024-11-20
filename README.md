@@ -13,7 +13,7 @@ This section will detail the usage of the application once it is complete or has
 
 ## The technologies
 
-This section will contain more detailed explanations of the showcased technologies once the project lead has had time to study each one appropriately.
+This section contains a brief explanation of the showcased technologies.
 
 ### Cookies
 
@@ -29,14 +29,39 @@ This section will contain more detailed explanations of the showcased technologi
 
 ### Local Storage
 
-:ledger:
+Part of Web Storage API, which enables browsers, and by extension websites, to store data locally on the client-side. The data in Local Storage is stored indefinitely unless expicilty deleted by the user or the website.
 
+Storage of data in Local Storage is done with key-value pairs, where the actual value (data) is stored in string format. Local Storage offers a rather sizable amount of storage space to websites, up to 5-10 MB, depending on the browser.
+
+Data in Local Storage is meant to be domain specific and thus somewhat isolated but as it is accessible via JavaScript, it is vulnerable to XSS attacks.
+
+Related to Local Storage is Session Storage which is essentially the same, but automatically clears itself when the user closes the related browser tab.
+
+
+## Sources
+
+Here are listed the sources used in [The technologies](#the-technologies) part of this Readme.
+
+### Cookies
+
+
+### JWT
+
+
+### Session ID
+
+### Local Storage
+- [w3schools HTML Web Storage API](https://www.w3schools.com/html/html5_webstorage.asp)
+- [mdn web docs - Web Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API)
+
+### Various subjects
+- ChatGpt
 
 ---
 
 ## Next.Js create project documentation
 
-This section contains the default documentation created with the new Next.js project. It might be removed at a later date.
+This section contains the default documentation created with a new Next.js project. It might be removed at a later date but is left here now for reference.
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
