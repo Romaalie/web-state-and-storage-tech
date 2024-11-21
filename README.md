@@ -13,11 +13,21 @@ This section will detail the usage of the application once it is complete or has
 
 ## The technologies
 
-This section contains a brief explanation of the showcased technologies.
+This section contains brief explanations of the showcased technologies.
 
 ### Cookies
 
-:cookie:
+Cookies are small, often max 4 KB/cookie, amounts of data, usually created by a webserver and stored clientside by the browser. Cookies are by default automatically sent by the browser with every request associated with that cookie's domain.
+
+Originally created to solve the statelessness issue of the HTTP protocol in the 1990s, cookies still see wide contemporary use. Cookies are used to store, for example, user preferences or Session IDs. Of course, cookies can also be used to track internet activity and profile users, often in hopes of better advertisement targeting.
+
+Cookies consist of key-value pairs and additional metadata. While the key-value pair contains the actual data meant to be transferred between the client and the server, metadata contains various important flags and additional information.
+
+Cookie content example:  
+`sessionId=abc123; Path=/; HttpOnly; Secure; SameSite=Strict`  
+
+In the example above, ``sessionId=abc123`` is the key-value pair. ``Path=/`` denotes the URL path within the domain where the cookie should be included in the request. In this example all requests to the domain should include this cookie. ``HttpOnly``, ``Secure`` and ``SameSite=Strict`` are important flags which limit the usage and increase the security of the cookie. ``HttpOnly`` restricts access to the cookie by clientside JavaScript and ``Secure`` marks the cookie to be only transmitted via HTTPS connections. ``SameSite=Strict`` is a way to mitigate the risk of CSRF attacks as this prevents the cookie being sent with cross-origin requests.
+
 
 ### JWT
 
