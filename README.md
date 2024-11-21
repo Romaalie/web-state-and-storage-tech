@@ -1,6 +1,6 @@
 # Readme
 
-The purpose of this project is to create a simple web application utilizing **Next.js**. The application showcases the handling and utilization of one or more of the following web storage mechanisms, which are integral to modern web developement:
+The purpose of this project is to create a simple web application utilizing **Next.js**. The application showcases the use of one or more of the following data storage and state management solutions, which are integral to modern web development:
 
 - **Cookies**
 - **JWT (JSON Web Token)**

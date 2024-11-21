@@ -1,5 +1,5 @@
 {
-  "name": "browser-storage-tech",
+  "name": "web-state-and-storage-tech",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -12,7 +12,9 @@
     "browser-storage-tech": "file:",
     "next": "15.0.3",
     "react": "19.0.0-rc-66855b96-20241106",
-    "react-dom": "19.0.0-rc-66855b96-20241106"
+    "react-dom": "19.0.0-rc-66855b96-20241106",
+    "web-state-and-storage-tech": "file:",
+    "web-storage-tech": "file:"
   },
   "devDependencies": {
     "@types/node": "^20",
