@@ -32,6 +32,7 @@ export default function Page() {
 
     const handleGet = async (key: string) => {
         if (!key) {
+            setGetDataValue("")
             showToast("No Key given for Read")
         } else {
             try {
@@ -41,6 +42,7 @@ export default function Page() {
                     setGetKeyValue("");
                 }
                 else {
+                    setGetDataValue("");
                     showToast("No data found with Key: " + key);
                 }
             }
@@ -78,6 +80,7 @@ export default function Page() {
             setStorageContent(retrievedData);
         }
         // The filtering is to prevent this one entry from showing in the demo
+        // Apparently not working as intended....
         storageItems = storageContent
             .filter(item => item.key !== "ally-supports-cache")
             .map(item => <li>Key: {item.key}, Value: {item.value}</li>);
@@ -130,7 +133,7 @@ export default function Page() {
                     <div className="bg-blue-100 p-6 rounded-lg shadow-md">
                         <h2 className="text-xl font-semibold mb-4">Instructions</h2>
                         <p>Local Storage is "permanent" domain specific storage on your local device, managed by your browser.
-                            The contents of your Local storage will remain even if you navigate away from this page.
+                            The contents of your Local storage will remain even if you navigate away from this page or even close your browser!
                             Here you can test out the base functionalities of Local Storage with string inputs.
                             < br />
                             < br />
@@ -213,6 +216,7 @@ export default function Page() {
                             </button>
                         </div>
                         <div className="flex flex-col items-center justify-end">
+                            <label>Key</label>
                             <input
                                 type="text"
                                 className="border border-gray-300 rounded-lg py-2 px-4 mb-2"
