@@ -1,19 +1,37 @@
 # Readme
 
-The purpose of this project is to create a simple web application utilizing **Next.js**. The application showcases the use of one or more of the following data storage and state management solutions, which are integral to modern web development:
+The purpose of this project is to create a simple web application utilizing [**Next.js**](https://nextjs.org/) and [**Tailwind CSS**](https://tailwindcss.com/). The application showcases the use of one or more of the following data storage and state management solutions, which are integral to modern web development:
 
 - **Cookies**
 - **JWT (JSON Web Token)**
 - **Session ID**
 - **Local Storage**
 
-## Operating instructions
+## Getting started
 
-This section will detail the usage of the application once it is complete or has at least some functionality. 
+This project is currently in development phase and only available to run as a local copy by [forking](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) and/or [cloning](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) from this repository.
 
-## The technologies
+After you have successfully fetched a local copy, run `npm install` in the project root folder to install the necessary dependencies.
 
-This section contains brief explanations of the showcased technologies.
+Once the dependencies are installed you can use `npm run dev` to run the app and the use your browser to access the app at the given port for localhost, 3000 in the example below.
+
+![Image of starting the dev build successfully using npm run dev command](image.png)
+
+### Browser view
+
+This is the landing page where you can navigate using the provided buttons:
+
+![Image of the landing page of the app with header "The amazing world of State and Storage Mechanisms in Web Applications" and four buttons labeled "Cookies", "JWT (JSON Web Token)", "Local Storge", "Session ID". Other than Local Storage the buttons are greyed out.](image-1.png)
+
+Currently only the Local Storage page has meaningful content and the other buttons are disabled.
+
+#### Local Storage
+
+The main functionality of the page is to enable very basic testing of Web Storage API methods getItem(), setItem(), removeItem() and clear() which are used to interact with Local Storage. The Local Storage page has instructions on the usage of the page itself and a brief on Local Storage. 
+
+![WRITE ALT TEXT HERE](image-4.png)
+
+## Understanding the Data Storage and State Management Techniques
 
 ### Cookies
 
@@ -59,10 +77,11 @@ Related to Local Storage is Session Storage which is essentially the same, but a
 
 ## Sources
 
-Here are listed the sources used in [The technologies](#the-technologies) part of this Readme.
+Below are listed some sources used in writing of the [Understanding the Data Storage and State Management Techniques](#understanding-the-data-storage-and-state-management-techniques) part of this Readme and to increase the overall understanding of project members concerning the concepts and technologies used.
 
 ### Cookies
 
+- [mdn web docs_ - Using HTTP cookies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies)
 
 ### JWT
 
@@ -89,47 +108,3 @@ Here are listed the sources used in [The technologies](#the-technologies) part o
 - [Youtube - ByteByteGo -  Session Vs JWT: The Differences You May Not Know! ](https://www.youtube.com/watch?v=fyTxwIa-1U0)
 - [Youtube - Code Realm -  Authentication on the Web (Sessions, Cookies, JWT, localStorage, and more) ](https://www.youtube.com/watch?v=2PPSXonhIck)
 - [Youtube - Steve Griffith - Prof3ssorSt3v3  - Browser Persistent Data Storage ](https://www.youtube.com/watch?v=OOcxXyckmcs)
-
-
----
-
-## Next.Js create project documentation
-
-This section contains the default documentation created with a new Next.js project. It might be removed at a later date but is left here now for reference.
-
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
-### Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-### Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-### Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
